@@ -1,0 +1,12 @@
+spring:
+    application:
+      name: front-service
+server:
+  port: 3001
+  eureka:
+    instance:
+      hostname: localhost
+    client:
+      serviceUrl:
+        defaultZone: ${EUREKA_URI:http://localhost:8765/eureka}
+        fetchRegistry: false
