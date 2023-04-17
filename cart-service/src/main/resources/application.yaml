@@ -1,0 +1,13 @@
+server:
+  port: 8166
+  servlet:
+    context-path: /web-market-carts
+utils:
+  cart:
+    prefix: SPRING_WEB_APP_
+integrations:
+  core-service:
+    url: http://localhost:5555/core
+    connect-timeout: 2000
+    read-timeout: 10000
+    write-timeout: 2000
